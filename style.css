@@ -204,6 +204,14 @@ footer {
     .main__section {
         flex-direction: column;
     }
+    .main__content {
+        text-align: center;
+        padding: 13px;
+    }
+    .main__button-container {
+        margin-top: 19px;
+    }
+
     .main__buttons {
         flex-direction: column;
         align-items: center;
@@ -233,5 +241,30 @@ footer {
     }
     .main__greeting {
         margin-left: 0;
+    }
+    .footer__content{
+    flex-direction: column;
+    }
+    footer{
+        text-align: center;
+        margin-top: 345px;
+        margin-left: 93px;
+
+    }
+    .main__image {
+    margin-left: 34px;
+    }
+    .footer__social-icons {
+    margin-left: 70px;
+    }
+    .header__logo{
+        border: 1px solid red;
+    }
+    .header__logo a{
+        font-size: 20px;
+        margin-left: 0px;
+    }
+    .header__nav ul {
+        margin-right: 20px;
     }
 }
