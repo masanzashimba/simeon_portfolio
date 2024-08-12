@@ -197,7 +197,7 @@ footer {
     background-color: red;
 }
 .bgd-blue{
-    background-color: blue;
+    background-color: rgba(80, 171, 216);
 }
 /* Responsive Styles */
 @media (max-width: 768px) {
@@ -231,8 +231,10 @@ footer {
         flex-direction: column;
     }
     .main__buttons {
-        margin-left: 0;
+        padding-left: 20px;
+        padding-right: 20px;
         width: auto;
+        flex-direction: row;
     }
     .main__image-container {
         width: 354px;
@@ -247,22 +249,27 @@ footer {
     }
     footer{
         text-align: center;
-        margin-top: 345px;
         margin-left: 93px;
 
     }
     .main__image {
     margin-left: 34px;
     }
+    header{
+        flex-direction: column;
+    }
     .footer__social-icons {
     margin-left: 70px;
     }
     .header__logo{
-        border: 1px solid red;
+        margin-left: 81px;
+        margin-bottom: 26px;
+
     }
     .header__logo a{
-        font-size: 20px;
+        font-size: 30px;
         margin-left: 0px;
+        
     }
     .header__nav ul {
         margin-right: 20px;
