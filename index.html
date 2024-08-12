@@ -1,91 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Lien vers la feuille de style CSS -->
-        <link rel="stylesheet" href="style.css">
-        <!-- Lien vers les icônes Font Awesome -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Lien vers la feuille de style CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Lien vers les icônes Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
     
-        <!-- Titre de la page -->
-        <title>Portfolio</title>
-    </head>
-    <body>
-        
-        <header>
-            <!-- Section pour le logo et la navigation -->
-            <div ><a href="index.html" class="logo">Simeon Shimba</a></div>
-            <nav>
-                <ul>
-                    <!-- Liens de navigation vers les différentes sections du site -->
-                    <li><a href="cv.html" class="border-lef">Cv</a></li>
-                    <li><a href="projets.html" class="border-left">Projets</a></li>
-                    <li><a href="contact.html" class="border-left">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section class="main_section">
-                <!-- Section principale contenant l'image et les informations personnelles -->
-                <div>
-                    <img src="simeon.jpg" class="image-container" alt="">
-                </div>
-                <div class="mes_info">
-                    <!-- Salutations et introduction -->
-                    <h2 class="mon_h2">Hello</h2>
-                    <div class="content-main"> 
-                        <!-- Sous-section pour la description personnelle -->
-                        <h3 class="for-me">A propos de moi</h3>
-                        <p class="apropos">Je suis <span class="simeon">Simeon Shimba</span>, un développeur web passionné doté d'une créativité débordant et d'un talent pour concrétiser des idées en expériences numériques interactives. </p>
-                   </div>
-                   
-                    <!-- Section pour les boutons de navigation vers le CV, les projets et le contact -->
-                    <div class="mes_buttons">
-                        <div class="element">
-                            <div class="cv"><a href="cv.html" class="button_nav"><span>CV</span></a></div>
-                        </div>
-                        <div class="element">
-                            <div class="Projets"><a href="projets.html" class="button_nav"><span>Projets</span></a></div>
-                        </div>
-                        <div class="element">
-                            <div class="Contact"><a href="contact.html" class="button_nav"><span>Contact</span></a></div>
-                        </div>
+    <!-- Titre de la page -->
+    <title>Portfolio</title>
+</head>
+<body>
+    <header class="header">
+        <!-- Section pour le logo et la navigation -->
+        <div class="header__logo">
+            <a href="index.html" class="header__logo-link">Simeon Shimba</a>
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <!-- Liens de navigation vers les différentes sections du site -->
+                <li class="header__nav-item">
+                    <a href="cv.html" class="header__nav-link header__nav-link--border-left">Cv</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="projets.html" class="header__nav-link header__nav-link--border-left">Projets</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="contact.html" class="header__nav-link header__nav-link--border-left">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="main__section">
+            <!-- Section principale contenant l'image et les informations personnelles -->
+            <div class="main__image-container">
+                <img src="simeon.jpg" class="main__image" alt="">
+            </div>
+            <div class="main__info">
+                <!-- Salutations et introduction -->
+                <h2 class="main__greeting">Hello</h2>
+                <div class="main__content"> 
+                    <!-- Sous-section pour la description personnelle -->
+                    <h3 class="main__about-title">A propos de moi</h3>
+                    <p class="main__about-description">Je suis <span class="main__name">Simeon Shimba</span>, un développeur web passionné doté d'une créativité débordante et d'un talent pour concrétiser des idées en expériences numériques interactives.</p>
+               </div>
+               
+                <!-- Section pour les boutons de navigation vers le CV, les projets et le contact -->
+                <div class="main__buttons">
+                    <div class="main__button-container">
+                        <a href="cv.html" class="main__button">
+                            <span class="main__button-text">CV</span>
+                        </a>
                     </div>
-                    
-                </div>
-            </section>
-        </main>
-        <footer class="pied">
-            <!-- Pied de page contenant les informations de contact -->
-            <div></div>
-            <div class="footer spacing">
-                <div>
-                    <!-- Section pour le numéro de téléphone -->
-                    <h3 class="h3">Télephone</h3>
-                    <a href="" class="moi">123-456-7890</a>
-                </div>
-                <div>
-                    <!-- Section pour l'adresse email -->
-                    <h3 class="h3">Email</h3>
-                    <a href="" class="moi">Info@mysite.com</a>
-                </div>
-                <div>
-                    <!-- Section pour les liens vers les réseaux sociaux -->
-                    <h3 class="h3">Suivez-Moi</h3>
-                    <div class="mes_i">
-                        <div><i class="fa-brands fa-twitter"></i></div>
-                        <div><i class="fa-brands fa-linkedin"></i></div>
-                        <div><i class="fa-brands fa-instagram"></i></div>
+                    <div class="main__button-container">
+                        <a href="projets.html" class="main__button">
+                            <span class="main__button-text">Projets</span>
+                        </a>
+                    </div>
+                    <div class="main__button-container">
+                        <a href="contact.html" class="main__button">
+                            <span class="main__button-text">Contact</span>
+                        </a>
                     </div>
                 </div>
-                <!-- Crédit de création du site -->
-                <div>
-                    <h3 class="moi"> © 2023 By Simeon Shimba</h3>
+                
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <!-- Pied de page contenant les informations de contact -->
+        <div class="footer__empty-space"></div>
+        <div class="footer__content">
+            <div class="footer__contact-section">
+                <!-- Section pour le numéro de téléphone -->
+                <h3 class="footer__contact-title">Téléphone</h3>
+                <a href="tel:123-456-7890" class="footer__contact-info">123-456-7890</a>
+            </div>
+            <div class="footer__contact-section">
+                <!-- Section pour l'adresse email -->
+                <h3 class="footer__contact-title">Email</h3>
+                <a href="mailto:info@mysite.com" class="footer__contact-info">Info@mysite.com</a>
+            </div>
+            <div class="footer__social-section">
+                <!-- Section pour les liens vers les réseaux sociaux -->
+                <h3 class="footer__social-title">Suivez-Moi</h3>
+                <div class="footer__social-icons">
+                    <a href="https://twitter.com" class="footer__social-icon"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://linkedin.com" class="footer__social-icon"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://instagram.com" class="footer__social-icon"><i class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
-            <div></div>
-            
-        </footer>
-    </body>
+            <!-- Crédit de création du site -->
+            <div class="footer__credit">
+                <h3 class="footer__credit-text">© 2023 By Simeon Shimba</h3>
+            </div>
+        </div>
+        <div class="footer__empty-space"></div>
+        
+    </footer>
+</body>
 </html>
