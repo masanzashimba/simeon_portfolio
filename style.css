@@ -57,13 +57,10 @@
 }
 
 /* Main */
-.main {
-    display: flex;
-    justify-content: space-evenly;
-}
+
 .main__section {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .main__image-container {
     width: 484px;
