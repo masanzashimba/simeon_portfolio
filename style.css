@@ -135,7 +135,7 @@
 }
 
 /* Footer */
-.footer {
+footer {
     display: flex;
     justify-content: space-evenly;
     margin-top: 80px;
@@ -147,7 +147,7 @@
 .footer__content {
     display: flex;
     justify-content: space-between;
-    flex: 2;
+    gap: 70px;
 }
 .footer__contact-section {
     font-family: "Inter", sans-serif;
@@ -183,11 +183,20 @@
 .footer__credit {
     font-family: "Inter", sans-serif;
 }
+.fa-brands{
+    color: black;
+}
 .footer__credit-text {
     font-family: "Inter", sans-serif;
     font-size: 18px;
 }
 
+.bgd-red{
+    background-color: red;
+}
+.bgd-blue{
+    background-color: blue;
+}
 /* Responsive Styles */
 @media (max-width: 768px) {
     .main__section {
